@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
+<XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
+  <AddMenu>
+    <eng>National Instruments::NI 9759 RevB</eng>
+    <loc>National Instruments::NI 9759 RevB</loc>
+  </AddMenu>
+  <Version>1.0</Version>
+  <Type>Asynchronous</Type>
+  <MaxOccurrence>2474</MaxOccurrence>
+  <MainPageGUID>043704e6-f96a-41ba-9f28-e0bf3582615c</MainPageGUID>
+  <InitializationVI>
+    <Type>Action</Type>
+    <Item2Launch>
+      <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\NI 9759 RevB\NI 9759 Configuration.llb\Initialization VI.vi</Path>
+    </Item2Launch>
+  </InitializationVI>
+  <CustomDeviceVI>
+		<SourceDistribution>
+			<Source>
+				<SupportedTarget>Pharlap</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\NI 9759 RevB\Pharlap\c\NI 9759 RT.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Custom Devices\NI 9759 RT.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+			<Source>
+				<SupportedTarget>VxWorks</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\NI 9759 RevB\VxWorks\c\NI 9759 RT.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Custom Devices\NI 9759 RT.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+			<Source>
+				<SupportedTarget>Linux_32_ARM</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\NI 9759 RevB\Linux_32_ARM\NI 9759 RT.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Custom Devices\NI 9759 RT.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+		</SourceDistribution>	
+	</CustomDeviceVI>
+  <Dependencies />
+  <Pages>
+ 	<Page>
+      	<Name>
+        	<eng>NI 9759 RevB</eng>
+        	<loc>NI 9759 RevB</loc>
+      	</Name>
+      	<GUID>043704e6-f96a-41ba-9f28-e0bf3582615c</GUID>
+		<Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\NI 9759 RevB\Data\module.png</Path>
+		</Glyph>
+      	<Item2Launch>
+        	<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\NI 9759 RevB\NI 9759 Configuration.llb\Main Page.vi</Path>
+      	</Item2Launch>
+	  	<RunTimeMenu>
+			<MenuItem>
+				<GUID>77b71bdd-d372-4e98-a0cf-cacfe4ebb205</GUID>
+				<Type>Action</Type>
+				<Name>
+					<eng>Disable</eng>
+					<loc>Disable</loc>
+				</Name>
+				<Item2Launch>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\NI 9759 RevB\NI 9759 Configuration.llb\EnableDisable - Right Click.vi</Path>
+				</Item2Launch>
+			</MenuItem>
+		</RunTimeMenu>
+      	<ActionVIOnCompile>
+        	<Type>To Common Doc Dir</Type>
+        	<Path>Custom Devices\NI 9759 RevB\NI 9759 Configuration.llb\Main On Compile Action VI.vi</Path>
+      	</ActionVIOnCompile>
+    </Page>
+ 	<Page>
+      	<Name>
+        	<eng>NI 9759 RevB (Disabled)</eng>
+        	<loc>NI 9759 RevB (Disabled)</loc>
+      	</Name>
+      	<GUID>14ccdd51-a138-451a-a39a-671b6f30041d</GUID>
+		<Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\NI 9759 RevB\Data\module_disabled.png</Path>
+		</Glyph>
+      	<Item2Launch>
+        	<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\NI 9759 RevB\NI 9759 Configuration.llb\Main Page.vi</Path>
+      	</Item2Launch>
+	  	<RunTimeMenu>
+			<MenuItem>
+				<GUID>77b71bdd-d372-4e98-a0cf-cacfe4ebb205</GUID>
+				<Type>Action</Type>
+				<Name>
+					<eng>Enable</eng>
+					<loc>Enable</loc>
+				</Name>
+				<Item2Launch>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\NI 9759 RevB\NI 9759 Configuration.llb\EnableDisable - Right Click.vi</Path>
+				</Item2Launch>
+			</MenuItem>
+		</RunTimeMenu>
+    </Page>
+	<Page>
+		<Name>
+			<eng>Section Read(delete protected)</eng>
+			<loc>Section Read(delete protected)</loc>
+		</Name>
+		<DisallowRenaming>true</DisallowRenaming>
+		<DeleteProtection>true</DeleteProtection>
+		<GUID>7d62748c-5b5b-4fcc-a636-d9726e69d327</GUID>
+		<Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\NI 9759 RevB\Data\read.png</Path>
+		</Glyph>
+		<Item2Launch>
+			<Type>Absolute</Type>
+			<Path>System UI VIs\Custom Device\Custom Device Section.vi</Path>
+		</Item2Launch>
+		<Help>
+			<Item2Launch>
+				<Type>To Base</Type>
+				<Path>Veristand.chm\Custom_Devices_SE.html</Path>
+			</Item2Launch>
+			<FileType>chm</FileType>
+		</Help>
+	</Page>
+	<Page>
+		<Name>
+			<eng>Section Write(delete protected)</eng>
+			<loc>Section Write(delete protected)</loc>
+		</Name>
+		<DisallowRenaming>true</DisallowRenaming>
+		<DeleteProtection>true</DeleteProtection>
+		<GUID>a1aa6f00-b9f7-40f6-887c-2c4f1e9d321e</GUID>
+		<Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\NI 9759 RevB\Data\write.png</Path>
+		</Glyph>
+		<Item2Launch>
+			<Type>Absolute</Type>
+			<Path>System UI VIs\Custom Device\Custom Device Section.vi</Path>
+		</Item2Launch>
+		<Help>
+			<Item2Launch>
+				<Type>To Base</Type>
+				<Path>Veristand.chm\Custom_Devices_SE.html</Path>
+			</Item2Launch>
+			<FileType>chm</FileType>
+		</Help>
+	</Page>
+	<Page>
+		<Name>
+			<eng>Channel (delete protected)</eng>
+			<loc>Channel (delete protected)</loc>
+		</Name>
+		<DisallowRenaming>true</DisallowRenaming>
+		<DeleteProtection>true</DeleteProtection>
+		<GUID>044eab8a-eaf9-4911-a08f-5455933789a0</GUID>
+		<Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\default fpga channel.png</Path>
+		</Glyph>
+		<Item2Launch>
+			<Type>Absolute</Type>
+			<Path>System UI VIs\Custom Device\Custom Device Channel.vi</Path>
+		</Item2Launch>
+		<Help>
+			<Item2Launch>
+				<Type>To Base</Type>
+				<Path>Veristand.chm\Custom_Devices_SE.html</Path>
+			</Item2Launch>
+		<FileType>chm</FileType>
+		</Help>
+	</Page>
+	<Page>
+		<Name>
+			<eng>Status</eng>
+			<loc>Status</loc>
+		</Name>
+		<DisallowRenaming>true</DisallowRenaming>
+		<DeleteProtection>true</DeleteProtection>
+		<GUID>a24c8a18-6c61-49c1-a038-2eddd9d5ca1c</GUID>
+	  <Glyph>
+		<Type>To Application Data Dir</Type>
+		<Path>System Explorer\Glyphs\system variable.png</Path>
+	  </Glyph>
+		<Item2Launch>
+			<Type>Absolute</Type>
+			<Path>System UI VIs\Custom Device\Custom Device Section.vi</Path>
+		</Item2Launch>
+		<Help>
+			<Item2Launch>
+				<Type>To Base</Type>
+				<Path>Veristand.chm\Custom_Devices_SE.html</Path>
+			</Item2Launch>
+			<FileType>chm</FileType>
+		</Help>
+	</Page>
+  </Pages>
+  <CustomXML>
+    <Dummy></Dummy>
+  </CustomXML>
+</CustomDevice>
